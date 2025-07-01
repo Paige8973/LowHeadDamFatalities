@@ -1,4 +1,4 @@
-// -------------------- DATA LAYER --------------------
+ // -------------------- DATA LAYER --------------------
         const DataService = (function() {
             // Private variables
             let damData = [];
@@ -299,8 +299,8 @@
         if (isVisible) {
             // Zoom to dam location when expanding incidents
             MapController.focusOnDam(dam.id, 12); // Zoom level 12
-                
-            // Add image if it doesn't exist
+         
+            // Add image if it exists
             if (!damItem.querySelector('.dam-image')&& dam.imageUrl && dam.imageUrl !== 'null') {
                 const image = document.createElement('img');
                 image.src = `assets/images/${dam.imageUrl}`;
